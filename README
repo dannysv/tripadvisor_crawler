@@ -1,0 +1,22 @@
+Scripts to get reviews from restaurant of a given city (tripadvisor)
+
+Depencencies
+	python3
+	bs4==0.0.1
+	lxml==4.5.2
+	requests==2.24.0
+	urllib3==1.25.10
+	tqdm
+Create the folder data if not exists
+	
+Go to the code folder
+	run 
+		- python 1links_restaurants.py link_restaurant_city
+		example:
+		python 1links_restaurants.py https://www.tripadvisor.de/Restaurants-g187323-Berlin.html
+		- python 2rev_links_restaurants.py
+		- python 3get_reviews.py
+
+Output
+	A list of links and final text reviews are stored in the folder data
+	Final output : data/reviews.txt (one review per line)
